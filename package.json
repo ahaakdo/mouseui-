@@ -2,7 +2,9 @@
   "name": "mouse-ui",
   "private": true,
   "scripts": {
-    "build:ui": "pnpm --filter ./packages/** run build"
+    "build:ui": "pnpm --filter ./packages/** run build",
+    "clean:type": "rimraf ./dist",
+    "type:src": "pnpm run clean:type && vue-tsc -p tsconfig.src.json --composite false --declaration --emitDeclarationOnly"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.16.0",
@@ -20,6 +22,9 @@
     "vue-eslint-parser": "^9.4.3"
   },
   "dependencies": {
-    "vue": "^3.4.31"
+    "@types/node": "^20.14.10",
+    "rimraf": "^6.0.0",
+    "vue": "^3.4.31",
+    "vue-tsc": "^2.0.26"
   }
 }
