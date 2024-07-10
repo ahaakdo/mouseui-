@@ -1,0 +1,11 @@
+{
+    "name": "@mouseui/demo",
+    "private": true,
+    "scripts": {
+        "dev": "vite dev"
+    },
+    "dependencies": {
+        "@mouseui/ui": "workspace:^"
+    },
+    "devDependencies": {}
+}
