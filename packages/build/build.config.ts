@@ -16,3 +16,14 @@ export function generateConfig(
         ...customOptions,
     }, viteConfig);
 }
+
+/** 构建 Vue 组件模块的预设 */
+export function generateVueConfig(
+    customOptions?: GenerateConfigOptions,
+    viteConfig?: UserConfig,
+) {
+    return generateConfig({
+        pluginVue: true,
+        ...customOptions,
+    }, viteConfig);
+}

@@ -1,3 +1,3 @@
-import { generateConfig } from './build.config';
+import { generateVueConfig } from '../build/build.config';
 
-export default generateConfig();
+export default generateVueConfig();

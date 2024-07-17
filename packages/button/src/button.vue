@@ -15,7 +15,10 @@ function clickHandler() {
 </script>
 
 <template>
-  <button class="openx-button" @click="clickHandler">
+  <button 
+    class="mouse-button text-blue ml-2px cursor-pointer" 
+    @click="clickHandler"
+  >
     <slot></slot>
   </button>
 </template>
